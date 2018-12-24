@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>flex</title>
+	<!-- <link rel="stylesheet" href="bootstrap-3.3.7/css/bootstrap.min.css"> -->
+</head>
+<body>
+	<div class="Body" >
+            <div class="box">
+                <div class="item">123</div>
+                <div class="item1">321</div>
+                <div class="item2">213</div>
+                <div class="item3">312</div>    
+            </div>
+           </div> 
+</html>
+<style>
+.Body {
+	width: 600px; 
+	background-color: #d7d3b6;  
+	
+}
+     .box {
+    display: flex;
+     /*flex-direction: column-reverse;*/
+    /*align-items:center;*/
+    justify-content:space-around;
+}
+	.item {
+    width: 70px;
+    height: 70px;
+    background: red;
+    text-align: center;
+    font-size: 30px;  
+    margin: 5px;
+    color: #666;
+	/*flex-shrink:1;*/
+}
+.item1 {
+    width: 70px;
+    height: 80px;
+    background: red;
+    text-align: center;
+    font-size: 40px;  
+    margin: 5px;
+    color: #666;
+    flex-grow:1;
+    /*order:1;*/
+    align-self:flex-end;
+}
+.item2 {
+    width: 70px;
+    height: 90px;
+    background: red;
+    text-align: center;
+    font-size: 50px;  
+    margin: 5px;
+    color: #666;
+}
+.item3 {
+    width: 70px;
+    height: 100px;
+    background: red;
+    text-align: center;
+    font-size: 60px;  
+    margin: 5px;
+    color: #666;
+}
+</style>
