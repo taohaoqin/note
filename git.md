@@ -29,6 +29,9 @@ git commit -m "remove xxx.txt"
 
  从远程仓库克隆git clone git@github.com:(GitHub账号)/仓库名称.git
 
+要添加另一个本地仓库对应一个同一个远程仓库时要用 Git rebase origin/master 拉到同一线上再进行git push origin master
+
+
  分支：
  git checkout -b 分支名称(如dev) 创建并切换到分支
  git branch dev 创建分支
@@ -54,6 +57,7 @@ git commit -m "remove xxx.txt"
 会产生冲突
 解决冲突 先用git pull 把最新的提交从origin/dev抓下来 本地合并再推送
 如果git pull失败的话 用--set-upstream-to=origin/dev dev 设置origin/dev和dev的链接 在用git pull 在本地解决冲突后在git push origin dev 推送
+
 
 标签
 git tag 标签名  新建一个标签，默认为HEAD 
@@ -83,3 +87,5 @@ hotfix 补丁分支，基于master的分支克隆，主要用于对线上版本�
 主要工作流程:初始化项目为gitflow 默认创建master分支,从master拉取第一个分支develop分支，在develop拉取多个feature同时进行开发，开发完成后合并到develop,可以选择性删除feature,但不能更改,必要时从release分支进行修改，从develop拉取到release分支进行提测,在release分支上修复bug,release分支上线后合并release到develop/master并推送,合并后 可选择性删除当前release分支,不删除也不能修改,有问题也必须从master拉取hotfix分支进行修改，上线之后发现bug,也从master拉取hotfix进行修改,再合并hotfix到develop/master并推送,之后hotfix不能修改,若还有问题,还是从master拉取新的hotfix继续修复。
 
 当在进行一个feature/develop时，若develop分支有变动，要将变动合并到自己的分支上 即 develop合并到feature分支上.
+
+
