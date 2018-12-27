@@ -58,7 +58,7 @@ git commit -m "remove xxx.txt"
  5. 当多人要在dev上开发时，就要建立远程origin的dev分支到本地 用命令创建本地dev：
  6. git checkout -b dev origin/dev 再用git push origin dev推送分支，多人推送的时候会产生冲突
 解决冲突 先用git pull 把最新的提交从origin/dev抓下来 本地合并再推送
-7. 如果git pull失败的话 用--set-upstream-to=origin/dev dev 设置origin/dev和dev的链接 在用git pull 在本地解决冲突后在git push origin dev 推送
+7. 如果git pull失败的话 用git branch --set-upstream-to=origin/dev dev 设置origin/dev和dev的链接 在用git pull 在本地解决冲突后在git push origin dev 推送
 
 
 ###标签

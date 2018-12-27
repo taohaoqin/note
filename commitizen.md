@@ -13,14 +13,14 @@
 * 最后在创建一个package.json文件 执行命令 如果有该文件了可以忽略这步
     npm init --yes
 * 都安装完毕后，在该文件夹测试一下，把当前文件下测试，把该文件变成.git文件git add . 后执行git cz 出现下面内容
-? Select the type of change that you're committing: (Use arrow keys)
-? feat:     A new feature 
-  fix:      A bug fix 
-  docs:     Documentation only changes 
-  style:    Changes that do not affect the meaning of the code (white-space, formatting, missing semi-colons, etc) 
-  refactor: A code change that neither fixes a bug nor adds a feature 
-  perf:     A code change that improves performance 
-  test:     Adding missing tests or correcting existing tests...
+ ? Select the type of change that you're committing: (Use arrow keys)
+ ? feat:     A new feature 
+   fix:      A bug fix 
+   docs:     Documentation only changes 
+   style:    Changes that do not affect the meaning of the code (white-space, formatting, missing semi-colons, etc) 
+   refactor: A code change that neither fixes a bug nor adds a feature 
+   perf:     A code change that improves performance 
+   test:     Adding missing tests or correcting existing tests...
   
   而不是跳转到其他地方的内容 跳转到其他内容的话就是失败 
 
