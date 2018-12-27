@@ -52,7 +52,8 @@ export default {
 </script>
 
 ```
-就能得到最基础的Echarts图标，可以在上面改数据，想要其它的图片可以在http://echarts.baidu.com/echarts2/doc/example.html上找到自己想要的图表，把网页上的option里的代码复制粘贴到上面setOption({})的大括号里就能显示出来了。
+就能得到最基础的Echarts图标，可以在上面改数据，想要其它的图片可以在http://echarts.baidu.com/echarts2/doc/example.html
+ 上找到自己想要的图表，把网页上的option大括号里的代码复制粘贴到上面setOption({})的大括号里就能显示该图表。
 
 
  
