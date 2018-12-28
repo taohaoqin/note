@@ -14,8 +14,9 @@ npm run serve
 <div>
 <p>{{ message }}</p>
 </div>
-```
+
 </template>
+```
 ```bash
 <script>
  export default {
