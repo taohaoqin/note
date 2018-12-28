@@ -3,20 +3,20 @@
 ---
 ###声明式渲染
 Vue.js 的核心是一个允许采用简洁的模板语法来声明式地将数据渲染进 DOM 的系统
-```
+```bash
 vue create test 
 cd test 
 npm run serve
 ```
 在helloworld.vue测试
-```
+```bash
 <template>
 <div>
 <p>{{ message }}</p>
 </div>
 ```
 </template>
-```
+```bash
 <script>
  export default {
   name: 'HelloWorld',
@@ -27,11 +27,11 @@ npm run serve
 </script>
 ```
  http://localhost:8080/
- ```
+ ```bash
  Hello Vue!
  ```
 除了文本插值，我们还可以像这样来绑定元素特性：
-```
+```bash
 <template>
 <div>
 <span v-bind:title="message">
@@ -40,7 +40,7 @@ npm run serve
   </div>
 </template>
 ```
-```
+```bash
 <script>
  export default {
    data(){
@@ -54,14 +54,14 @@ npm run serve
 指令带有前缀 v-，以表示它们是 Vue 提供的特殊特性。
 ###v-if  条件渲染
 
-```
+```bash
 <template>
 <div>
 <p v-if="see">提示</p>
 </div>
 </template>
 ```
-```
+```bash
 <script>
  export default {
   data: {
@@ -73,7 +73,7 @@ npm run serve
 把true改成false 就会发现提示小时了
 ###v-for
 循环绑定(值的绑定，遍历)
-```
+```bash
 <template>
 <div>
 <ol>
@@ -84,7 +84,7 @@ npm run serve
   </div>
 </template>
 ```
-```
+```bash
 <script>
  export default {
   data: {
@@ -98,14 +98,14 @@ npm run serve
 </script>
 ```
 页面结果:
-```
+```bash
 1.张三
 2.李四
 3.王五
 ```
 ###v-on
  添加一个事件监听器 将事件处理函数定义在methods属性中
-```
+```bash
 <template>
 <div>
  <p>{{ message }}</p>
@@ -113,7 +113,7 @@ npm run serve
   </div>
 </template>
 ```
-```
+```bash
 <script>
  export default {
 data: {
@@ -131,7 +131,7 @@ data: {
 
 ###v-model
 双向数据绑定,负责监听用户的输入事件以更新数据。
-```
+```bash
 <template>
 <div>
  <p>{{ message }}</p>
@@ -139,7 +139,7 @@ data: {
   </div>
 </template>
 ```
-```
+```bash
 <script>
  export default {
   data: {
