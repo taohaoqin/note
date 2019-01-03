@@ -44,7 +44,7 @@ git commit -m "remove xxx.txt"
  7. git branch -D dev 强势删除 用于包含机密资料必须销毁的分支
  8. git merge --no-ff -m "merge with no-ff" dev 把原来的master和dev合并成一个新的master
  9. git branch -r 查看远程分支列表
- 10. git branch -r -d origin/feature/test 或者 git push origin --delete feature/test 或者 git push origin :feature/test
+ 10. git branch -r -d origin/feature/test 或者 git push origin --delete feature/test 或者 git push origin :feature/test  删除远程分支
  11. git remote update origin -p 更新远程分支列表
  12. git diff develop origin/feature/abilitymap --name-only 比较本地分支与远程分支
  13. git merge-base develop feature/abilitymap --name-only 查看当前分支改过的文件
