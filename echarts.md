@@ -15,7 +15,7 @@
 </template> 
 
 <script >
-let echarts=require('echarts')
+const echarts=require('echarts')
 export default {
 
   mounted(){
