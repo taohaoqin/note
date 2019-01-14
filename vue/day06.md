@@ -80,3 +80,5 @@ Vue.directive('background', {
       * modifiers：一个包含修饰符的对象。例如：v-my-directive.foo.bar 中，修饰符对象为 { foo: true, bar: true }。
 * vnode：Vue 编译生成的虚拟节点。
 * oldVnode：上一个虚拟节点，仅在 update 和 componentUpdated 钩子中可用。
+
+> 除了 el 之外，其它参数都应该是只读的，切勿进行修改。如果需要在钩子之间共享数据，建议通过元素的 dataset 来进行。
