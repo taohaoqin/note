@@ -134,9 +134,9 @@ new Vue({
 <template>
     <div>
         <son>
-            <template slot-scope="list">
+            <template slot-scope="scope">
                 <ul>
-                    <li v-for="item in list" :key="item.id">{{ item }}</li>
+                     <li v-for="item in scope.list" :key="item.id">{{ item}}  </li>
                 </ul>
             </template>
         </son>
