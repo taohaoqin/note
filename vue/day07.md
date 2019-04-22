@@ -119,7 +119,7 @@ Vue.component('my-component', {
 ```
 #### $emit的用法
 子组件可以使用 `$emit` 触发父组件的自定义事件 
-`this $emit('自定义时间名',要传送的数据)`
+`this $emit('自定义事件名',要传送的数据)`
 ```bash
 //子组件
  <el-form-item label="种类">

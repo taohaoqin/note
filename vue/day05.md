@@ -134,9 +134,9 @@ new Vue({
 <template>
     <div>
         <son>
-            <template slot-scope="scope">
+            <template slot-scope="scope" slot="item" >
                 <ul>
-                     <li v-for="item in scope.list" :key="item.id">{{ item}}  </li>
+                    <li>{{ scope.item.name}}  </li>
                 </ul>
             </template>
         </son>
@@ -156,7 +156,7 @@ export default {
 //子组件部分
 <template>
     <div>
-        <slot :list="lists"></slot>
+        <slot  v-for="item in lists" :item="item" name="item"></slot>
     </div>
 </template>
 <script>
