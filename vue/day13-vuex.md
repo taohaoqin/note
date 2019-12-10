@@ -67,7 +67,7 @@ const mutations = {
     }
 };
 ```
-这时候用`his.$store.commit('show') `或 `this.$store.commit('hide')` 以及 `this.$store.commit('newNum',6)` 在别的组件里面进行改变showfooter和changebleNum的值了，但这不是理想的方法，mutations里面的方法都是同步的。所以官方又提供了一个actions，这也是一个对象变量，作用是在action方法里面可以进行异步操作，这里面的方法是用异步触发mutations里面的方法。，actions里面自定义的函数接收一个context参数和要变化的形参，context与store实例具有相同的方法和属性，所以它可以执行context.commit(' '),然后也不要忘了把它也扔进Vuex.Store里面：
+这时候用`this.$store.commit('show') `或 `this.$store.commit('hide')` 以及 `this.$store.commit('newNum',6)` 在别的组件里面进行改变showfooter和changebleNum的值了，但这不是理想的方法，mutations里面的方法都是同步的。所以官方又提供了一个actions，这也是一个对象变量，作用是在action方法里面可以进行异步操作，这里面的方法是用异步触发mutations里面的方法。，actions里面自定义的函数接收一个context参数和要变化的形参，context与store实例具有相同的方法和属性，所以它可以执行context.commit(' '),然后也不要忘了把它也扔进Vuex.Store里面：
 ```bash
 const actions = {
     hideFooter(context) {  //自定义触发mutations里函数的方法，context与store 实例具有相同方法和属性
