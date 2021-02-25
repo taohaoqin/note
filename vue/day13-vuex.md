@@ -53,7 +53,7 @@ const getters = {   //实时监听state值的变化(最新状态)
 };
 ```
 此时，要引用的话就用`this.$store.getters.isShow`
-接下来要说的就是mutations了，mutattions也是一个对象，这个对象里面可以放改变state的初始值的方法
+接下来要说的就是mutations了，mutations也是一个对象，这个对象里面可以放改变state的初始值的方法
 ```bash
 const mutations = {
     show(state) {   //自定义改变state初始值的方法，这里面的参数除了state之外还可以再传额外的参数(变量或对象);
